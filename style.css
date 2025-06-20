@@ -1,0 +1,619 @@
+/* style.css */
+
+/* --- Reset and Base Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Very light grey background */
+    color: #343a40; /* Dark grey for body text */
+}
+
+/* Container for responsiveness and centering content */
+.container {
+    max-width: 1200px; /* Maximum width of your main content area */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds padding on the left and right inside the container */
+}
+
+/* --- Header Styles --- */
+.main-header {
+    background-color: #212529; /* Darker background for the header */
+    color: #ffffff; /* White text for the header */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for layout of title and nav */
+    justify-content: space-between; /* Puts space between title and nav */
+    align-items: center; /* Vertically aligns items in the header */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.2em; /* Larger font size for the site title */
+    font-weight: 700; /* Bolder title */
+    padding-left: 20px; /* Add padding for visual spacing */
+}
+
+.site-title a {
+    color: #ffffff;
+    text-decoration: none; /* Remove underline from site title link */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.site-title a:hover {
+    color: #00bfff; /* Bright blue on hover */
+}
+
+/* --- Main Navigation Styles --- */
+.main-nav {
+    padding-right: 20px; /* Add padding for visual spacing */
+}
+
+.main-nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes navigation items display horizontally */
+    flex-wrap: wrap; /* Allows nav items to wrap on smaller screens */
+    justify-content: center; /* Center align nav items if they wrap */
+}
+
+.main-nav ul li {
+    margin-left: 30px; /* Space out navigation items */
+}
+
+.main-nav ul li a {
+    color: #dee2e6; /* Light grey for navigation links */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 0;
+    display: block; /* Make the whole area clickable and apply padding */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+}
+
+.main-nav ul li a:hover {
+    color: #00bfff; /* Bright blue on hover */
+    border-bottom: 2px solid #00bfff; /* Underline effect on hover */
+}
+
+.main-nav ul li a.active {
+    color: #00bfff; /* Bright blue for the active page link */
+    border-bottom: 2px solid #00bfff; /* Underline for the active page link */
+    font-weight: bold; /* Make active link bold */
+}
+
+/* --- Main Content Area --- */
+.main-content {
+    padding: 40px 0; /* Vertical padding for the main content area */
+}
+
+/* --- Section Styling (general) --- */
+section {
+    background-color: #ffffff; /* White background for content sections */
+    padding: 30px;
+    margin-bottom: 30px; /* Space between sections */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* More prominent but soft shadow */
+}
+
+section h2 {
+    color: #212529; /* Dark grey for main section headings */
+    font-size: 2.5em; /* Larger heading for sections */
+    margin-bottom: 20px;
+    text-align: center; /* Center align main headings */
+    border-bottom: 2px solid #e9ecef; /* Subtle line under heading */
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #343a40; /* Slightly lighter dark grey for sub-headings */
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #495057; /* Medium grey for paragraphs */
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: disc; /* Default disc for unordered lists */
+    padding-left: 25px; /* Indent list items */
+    margin-bottom: 15px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+/* --- Home Page Specific Styles --- */
+.banner {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* More vertical padding for a grander look */
+    margin-bottom: 40px;
+}
+
+.banner h2 {
+    font-size: 3.2rem; /* Larger font for banner heading */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Text shadow for better readability */
+    border-bottom: none; /* Remove border from banner H2 */
+    padding-bottom: 0;
+}
+
+.banner p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e0e0e0; /* Lighter text for contrast */
+}
+
+.banner button {
+    background-color: #007bff; /* A standard blue */
+    color: white;
+    padding: 18px 40px; /* Larger button */
+    border: none;
+    border-radius: 50px; /* More rounded button */
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4); /* Shadow matches button color */
+    transition: all 0.3s ease;
+}
+
+.banner button:hover,
+.banner button:focus {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+}
+
+.destaques {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.destaques h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+.produtos-destaque {
+    display: flex;
+    justify-content: center; /* Center images */
+    flex-wrap: wrap; /* Allow images to wrap */
+    gap: 30px; /* Space between images */
+}
+
+.produtos-destaque img {
+    width: 100%; /* Make image responsive within its flex item */
+    max-width: 280px; /* Max width for images */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, crop if necessary */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* Nicer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produtos-destaque img:hover {
+    transform: translateY(-5px) scale(1.02); /* Lift and slightly enlarge */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* --- Products Page Specific Styles --- */
+.product-categories .category-list {
+    list-style: none; /* Remove bullets for category list */
+    padding: 0;
+    text-align: center; /* Center the links */
+    display: flex; /* Make categories horizontal */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between category links */
+}
+
+.product-categories .category-list li {
+    margin-bottom: 0; /* No bottom margin, handled by gap */
+}
+
+.product-categories .category-list li a {
+    background-color: #f0f2f5; /* Light background for category links */
+    padding: 15px 30px;
+    border-radius: 25px; /* Rounded pill shape */
+    font-size: 1.3em;
+    color: #007bff; /* Standard blue for links */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block; /* Allow padding and border-radius */
+    border: 1px solid #e0e0e0;
+}
+
+.product-categories .category-list li a:hover {
+    background-color: #e2e6ea; /* Darker background on hover */
+    color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Category Pages (pagina1.html, pagina2.html, pagina3.html) --- */
+.categoria {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.categoria h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #222;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.categoria .produto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 20px; /* Add internal padding */
+    border-radius: 8px; /* Rounded corners for product items */
+}
+
+.categoria .produto:last-child {
+    border-bottom: none;
+}
+
+.categoria .produto:hover {
+    background-color: #f9f9f9; /* Light highlight on hover */
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Soft shadow on hover */
+}
+
+.categoria .produto img {
+    width: 180px; /* Slightly smaller image for product list */
+    height: 180px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.categoria .produto p {
+    font-size: 1.15rem;
+    flex-grow: 1; /* Allow paragraph to take remaining space */
+}
+
+/* Filter Input (added dynamically by JS, but style here) */
+#filtro-produto {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 1.05rem;
+    border-radius: 25px;
+    border: 1.5px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px auto 30px; /* Center and add margins */
+    display: block; /* Make it a block element to respect margin auto */
+}
+
+#filtro-produto:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* --- Contact Page Specific Styles --- */
+.contato-info {
+    max-width: 600px;
+    margin: 20px auto 40px auto; /* More margin below */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-size: 1.15rem;
+    line-height: 1.8; /* Better line height */
+    text-align: center; /* Center contact info text */
+}
+
+.contato-info p {
+    margin: 10px 0; /* Adjust margin */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center icons and text */
+    gap: 10px; /* Space between icon and text */
+}
+
+/* Basic icons for contact info - you might need a font-awesome or similar library for real icons */
+.contato-info p::before {
+    font-family: 'Arial', sans-serif; /* Fallback */
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.contato-info p:nth-child(1)::before { content: '📍'; } /* Location */
+.contato-info p:nth-child(2)::before { content: '✉️'; } /* Email */
+.contato-info p:nth-child(3)::before { content: '📞'; } /* Phone */
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #ced4da; /* Lighter border */
+    font-size: 1.05rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 120px;
+}
+
+form button[type="submit"] {
+    background-color: #28a745; /* Green for submit button */
+    color: white;
+    padding: 16px 35px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 25px auto 0 auto; /* Center button and add top margin */
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.4);
+}
+
+iframe {
+    display: block;
+    margin: 30px auto 60px auto;
+    width: 100%;
+    max-width: 800px; /* Wider map */
+    height: 450px; /* Taller map */
+    border-radius: 10px;
+    border: 1px solid #dee2e6; /* Subtle border for map */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Footer Styles --- */
+.main-footer {
+    background-color: #212529; /* Dark background for footer, same as header */
+    color: #adb5bd; /* Light grey text for footer */
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px; /* Space above the footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+}
+
+.main-footer p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #ced4da; /* Slightly lighter than general footer text */
+}
+
+.main-footer a {
+    color: #00bfff; /* Bright blue for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: #87ceeb; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0; /* Adjust margin */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+
+/* --- Scroll to Top Button --- */
+#botaoTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #343a40; /* Dark grey */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: none; /* Hidden by default, shown by JS */
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#botaoTopo:hover,
+#botaoTopo:focus {
+    background-color: #495057; /* Slightly lighter on hover */
+    transform: translateY(-2px); /* Subtle lift */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .main-nav ul li {
+        margin-left: 20px;
+    }
+    .banner h2 {
+        font-size: 2.8rem;
+    }
+    .banner p {
+        font-size: 1.1rem;
+    }
+    .produtos-destaque img {
+        max-width: 220px;
+        height: 180px;
+    }
+    .categoria .produto img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
+    .site-title {
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+    .main-nav {
+        padding-right: 0;
+        width: 100%;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav ul li {
+        margin: 8px 0;
+    }
+
+    .banner {
+        padding: 60px 15px;
+    }
+    .banner h2 {
+        font-size: 2.2rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+    .banner button {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+
+    .produtos-destaque {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+
+    .categoria .produto {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .categoria .produto img {
+        margin: 0 0 15px 0; /* Adjust margin for vertical layout */
+        width: 160px; /* Slightly larger for better visibility */
+        height: 160px;
+    }
+    .categoria .produto p {
+        font-size: 1em;
+    }
+    .contato-info, form {
+        padding: 25px;
+    }
+    iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.8em;
+    }
+    .main-nav ul li a {
+        font-size: 0.95em;
+    }
+    .banner h2 {
+        font-size: 1.8rem;
+    }
+    .banner p {
+        font-size: 0.9em;
+    }
+    .banner button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+    section h2 {
+        font-size: 2em;
+    }
+    section h3 {
+        font-size: 1.5em;
+    }
+    .produtos-destaque img {
+        max-width: 180px;
+        height: 150px;
+    }
+    .product-categories .category-list li a {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+    .contato-info {
+        font-size: 1em;
+    }
+    form input, form textarea {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+    form button[type="submit"] {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    #botaoTopo {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
